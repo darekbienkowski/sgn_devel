@@ -24,4 +24,4 @@ If logged in as a "curator", the roles can be added or deleted.
 
 It is recommended that few users be given the "curator" privileges to avoid confusion over data ownership and accidental data overwriting and deletion.   
 
-[**Managing User Roles**]({{site.baseurl}}{% link _pages/03_manage/03_20.md%}#managing_user_roles)
+[**Managing User Roles**]({{site.baseurl}}{% link _pages/03_20_managing_user_roles.md%}#managing_user_roles)

@@ -1,5 +1,5 @@
 ---
-title: Basic Website Usage
+title: "1. Basic Website Usage"
 category: Jekyll
 layout: post
 ---
@@ -178,9 +178,16 @@ This page shows all lists that have been created, including those created by usi
 <img src='{{"assets/images/image297.png" | relative_url }}' alt="list10.png" width="624" height="97" />
 
 
-1.5. User Permissions
+1.5. Account Permissions
 ---
 
-Users are assigned into four different groups to determine the level of access they have on the database. This is to prevent data from being altered of deleted in error.
-Users are also assigned under Breeding Programs to restrict data access between different breeding programs.
-Curators can go to Manage User Roles to see user permissions and change a user's permission level.
+Breedbase accounts are assigned one or more of four different roles to determine the level of access they have within the database. The possible roles are **User**, **Submitter**, **Sequencer**, and **Curator**. Each role grants specific permissions, and careful management of them helps prevent data from being altered or deleted in error.
+
+<img src='{{"assets/images/roles.png" | relative_url }}' alt="roles.png"/>
+
+Accounts are also assigned Breeding Program role(s) to grant access to the specfic breeding program(s) they work with.
+
++ The **User** role gives an account permission to view and download data throughout the database.
++ The **Submitter** role gives an account permission to design field experiments and to upload and edit data using the tools in the “Manage” section. In order to submit and manage breeding data within a given breeding program, a submitter also must have a matching Breeding Program role.
++ The **Sequencer** role gives an account permission to design genotyping experiments and submit plates to a genotyping service.
++ The **Curator** role gives an account permission to do all of the above, as well as to delete data within the database. The Curator role also enables the addition or deletion of roles for all database accounts in the 'Manage User Roles' tool.

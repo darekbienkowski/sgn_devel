@@ -21,7 +21,7 @@ To upload a Field Book Phenotype file in a database format, click the “Upload 
 
 ![]({{"assets/images/image185.png" | relative_url }})
 
-The “Upload Fieldbook” link on this page and “Upload” link on the “Field Book Tools” page open the same dialogue. Please follow instructions for uploading phenotypic files on [*"Using Field Book App"*]({{site.baseurl}}{% link _pages/03_manage/03_06.md %}) page.
+The “Upload Fieldbook” link on this page and “Upload” link on the “Field Book Tools” page open the same dialogue. Please follow instructions for uploading phenotypic files on [*"Using Field Book App"*]({{site.baseurl}}{% link _pages/03_06_managing_crosses.md %}) page.
 
 ![]({{"assets/images/image112.png" | relative_url }})
 

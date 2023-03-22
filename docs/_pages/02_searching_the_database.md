@@ -1,5 +1,5 @@
 ---
-title: "2. Searching the database"
+title: "2. Searching the Database"
 category: Jekyll
 layout: post
 ---
