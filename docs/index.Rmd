@@ -1,0 +1,30 @@
+--- 
+title: "Breedbase User Manual"
+author: "Breedbase team"
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
+documentclass: krantz
+colorlinks: yes
+lot: yes
+lof: yes
+fontsize: 12pt
+description: "A manual for all things Breedbase. How to create an account, search the database, manage different data types, and analyze data."
+url: 'https://solgenomics.github.io/'
+github-repo: solgenomics/sgn
+cover-image: assets/images/Breedbase_HighRes.png
+site: bookdown::bookdown_site
+---
+
+# Preface {-}
+
+Welcome to the Breedbase manual! Use the table of contents in the left sidebar to navigate to the topic of your choice.
+
+You may also use the widgets at the top of the screen to:
+
+- collapse the sidebar
+- search for a specfic topic
+- change the font size or type
+- suggest an edit
+- download the manual as a pdf
+
+This manual is intended for database users. If you are a developer looking for software implementation details, please visit the developer wiki instead: https://github.com/solgenomics/sgn/wiki
