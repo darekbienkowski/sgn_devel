@@ -1,11 +1,7 @@
 ---
-title: "0. Breedbase Database Description"
-layout: doc_page
+layout: home
+title: Breedbase Database Description
+permalink: /
 ---
-
-<!-- TOC-START -->
-* TOC
-{:toc}
-<!-- TOC-END -->
 
 For more database implementation information for developers: https://github.com/solgenomics/sgn/wiki
