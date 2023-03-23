@@ -1,6 +1,8 @@
 # Managing User Roles
 
-<img src='{{"/assets/images/manage_user_roles_page.png" | relative_url }}' width="522" />
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/manage_user_roles_page.png')
+```
 
 ## What are User Roles?
 

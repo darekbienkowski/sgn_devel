@@ -2,7 +2,9 @@
 
 Breedbase has implemented a flexible spectral data storage protocol that handles spectral data irrespective of the source spectrometer. Spectral data storage and analysis in Breedbase makes use of the R package *waves* for outlier identification, plotting, sample aggregation, and prediction model training.
 
-<img src='{{"assets/images/waves_breedbase_schema.png" | relative_url }}' width="522" />
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/waves_breedbase_schema.png')
+```
 
 ---
 ## Upload Spectral Data
@@ -19,9 +21,13 @@ To upload a spectral dataset, navigate to the 'Manage NIRS Data' page by selecti
 * **comments**: Optional field for general comments.
 All other columns are required wavelengths. You can add how many columns you want upload -- there is no limit.
 
-<img src='{{"assets/images/manage_NIRS_main_display.png" | relative_url }}' width="522" />
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/manage_NIRS_main_display.png')
+```
 
-<img src='{{"assets/images/upload_NIRS_example_format.png" | relative_url }}' width="522" />
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/upload_NIRS_example_format.png')
+```
 
 ## Evaluate and Remove Outliers
 Spectral calibration models can be heavily affected by the presence of outliers, whether they come from spectrometer spectral artifacts or user errors. Mahalanobis distance (Mahalanobis, 1936) is a measure of the distance between a single observation and a larger distribution and is commonly used in the identification of outliers in a multivariate space (Des Maesschalck et al, 2000). The *FilterSpectra()* function in the R package [*waves*](https://CRAN.R-project.org/package=waves) calculates the Mahalanobis distance of each observation in a given spectral matrix using the *stats::mahalanobis()* function. Observations are identified as outliers if the squared distance is greater than the 95th percentile of a $\chi$^2^-distribution with *p* degrees of freedom, where *p* is the number of columns (wavelengths) in the spectral matrix (Johnson and Wichern, 2007). In Breedbase, this procedure is applied on a per-dataset basis on upload and outliers are given binary tags "Outlier."
@@ -29,7 +35,9 @@ Spectral calibration models can be heavily affected by the presence of outliers,
 ## Plot Spectra
 After outlier identification, a plot is generated using the *PlotSpectra()* function in [*waves*](https://CRAN.R-project.org/package=waves). This function uses the filtered spectra and *ggplot2::ggplot()* to create a line plot with outliers highlighted by color. A list of rows identified as outliers are shown beneath the plot. Plots are saved as .png files and linked to the original input datasets. Plot image files can be downloaded via the "Download Plot" button in the upload workflow.
 
-<img src='{{"assets/images/upload_NIRS_plot_example.png" | relative_url }}' width="522" />
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/upload_NIRS_plot_example.png')
+```
 
 ## Aggregate Spectra
 To obtain a stable and reliable spectral profile, most spectrometer manufacturers recommend that multiple spectral scans are captured for each sample. While some spectrometers aggregate these scans internally, many do not, requiring the user to do so before analysis can take place. Breedbase handles these cases upon data upload following filtering steps by calling the *AggregateSpectra()* function from [*waves*](https://CRAN.R-project.org/package=waves), saving the aggregated scans for future access through the search wizard feature. Scans are aggregated by sample mean (e.g. plot-level basis) according to the provided observationUnitName field. After aggregation, the user exits the upload workflow and the raw data file is saved in the upload archive.

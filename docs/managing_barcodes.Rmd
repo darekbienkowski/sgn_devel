@@ -2,7 +2,9 @@
 
 SGN databases provide tools for generating barcodes for stock identification. To access “Barcode Tools” page, clicking on “Barcodes” in the “Manage” menu.
 
-![]({{"assets/images/image82.png" | relative_url }})
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/image82.png')
+```
 
 “Barcode Tools” page provides four options for generating barcodes:
 
@@ -16,15 +18,21 @@ SGN databases provide tools for generating barcodes for stock identification. To
 
 To generate single barcode, clicking on “Generate Barcode” link on the “Barcode Tools” page.
 
-![]({{"assets/images/image274.png" | relative_url }})
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/image274.png')
+```
 
 In the “Generate Barcode” section, specify the name of the barcode, size of the barcode, then clicking on “Generate Barcode”
 
-![]({{"assets/images/image245.png" | relative_url }})
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/image245.png')
+```
 
 The database will generate a barcode for your stock. The barcode can be printed for your stock identification. It also appears on its corresponding stock page.
 
-![]({{"assets/images/image264.png" | relative_url }})
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/image264.png')
+```
 
 If you have a list of stocks that you want to generate barcodes, you can use “Download Stock Barcodes” section. You have three options for entering stock names:
 
@@ -38,7 +46,9 @@ If you have a list of stocks that you want to generate barcodes, you can use “
 
 You can select printer settings that you prefer in the “Printer Settings” section. After you enter stock names and specify printer settings, clicking on “Download Barcodes” button at the bottom of the page.
 
-![]({{"assets/images/image248.png" | relative_url }})
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/image248.png')
+```
 
 
 If you have a list of plots that you want to generate phenotyping barcodes, you can use “Download Plot Phenotyping Barcodes” section. You have three options for entering plot names:
@@ -49,7 +59,9 @@ If you have a list of plots that you want to generate phenotyping barcodes, you 
 
 3.  Uploading a “Tab-delimited Text File” with plot names.
 
-![]({{"assets/images/plot_pheno_barcode.png" | relative_url }})
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/plot_pheno_barcode.png')
+```
 
 If you have a list of trials that you want to generate barcodes, you can use “Download Trial Barcodes” section. You have three options for entering trial names:
 
@@ -59,4 +71,6 @@ If you have a list of trials that you want to generate barcodes, you can use “
 
 3.  Uploading a “Tab-delimited Text File” with trial names.
 
-![]({{"assets/images/trial_barcode.png" | relative_url }})
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/trial_barcode.png')
+```
