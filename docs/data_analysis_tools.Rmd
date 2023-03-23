@@ -349,7 +349,7 @@ There are three pathways to using this tool.
 
 K-Means clustering:
 
- ```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, fig.align='center'}
 knitr::include_graphics('assets/images/k-means-cluster.png')
 ```
 
@@ -398,7 +398,7 @@ There are three pathways to using this tool.
 
    (A) -- Once you you are in a model output put page, scroll down to the 'Kinship and Inbreeding' section and run kinship.
 
- ```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, fig.align='center'}
 knitr::include_graphics('assets/images/kinship-inbreeding.png')
 ```
 

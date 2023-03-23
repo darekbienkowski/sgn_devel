@@ -3,7 +3,6 @@ title: "User Manual"
 author: "Breedbase team"
 date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
-documentclass: krantz
 colorlinks: yes
 lot: yes
 lof: yes
