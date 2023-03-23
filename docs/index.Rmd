@@ -1,5 +1,6 @@
 --- 
-title: "Breedbase User Manual"
+title: "User Manual"
+author: "Breedbase team"
 date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
 documentclass: krantz
@@ -14,20 +15,24 @@ cover-image: assets/images/Breedbase_HighRes.png
 site: bookdown::bookdown_site
 ---
 
-# Intro {-}
-
-```{r echo=FALSE, out.width="50%", fig.align='center'}
-knitr::include_graphics('assets/images/Breedbase_HighRes.png')
-```
+# Introduction {-}
 
 Welcome to the Breedbase manual! Use the table of contents in the left sidebar to navigate to the topic of your choice.
 
+At any time you can select specific text in the manual to highlight or annotate it using [Hypothesis](https://web.hypothes.is/). Open the Hypothesis sidebar on the right to view existing annotations.
+
 You may also use the widgets at the top of the screen to:
 
-- collapse the sidebar
-- search for a specfic topic
-- change the font size, font type, or the site theme
-- suggest an edit
-- download the manual as a pdf
+<i class="fa fa-align-justify tab"></i> - collapse the sidebar<br>
+<i class="fa fa-search tab"></i> - search for a specfic topic<br>
+<i class="fa fa-font tab"></i> - change the font size, font type, or the site theme<br>
+<i class="fa fa-edit tab"></i> - suggest an edit in the guithub source file<br>
+<i class="fa fa-file-pdf-o tab"></i> - download the manual as a pdf
+
 
 This manual is intended for database users. If you are a developer looking for software implementation details, please visit the developer wiki instead: https://github.com/solgenomics/sgn/wiki
+
+<!-- ```{js, echo = FALSE}
+title=document.getElementById('header');
+title.innerHTML = '<center><img src="assets/images/Breedbase_HighRes.png" style="max-width: 50%;" alt="Breedbase Logo"></center>' + title.innerHTML
+``` -->

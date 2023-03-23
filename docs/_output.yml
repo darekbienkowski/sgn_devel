@@ -1,10 +1,13 @@
 bookdown::gitbook:
+  css: assets/style.css
+  includes:
+      in_header: hypothesis.html
   config:
     toc:
       collapse: section
       scroll_highlight: true
-      before: null
-      after: null
+      before: <li class="toc-logo"><a href="./"><img src="assets/images/Breedbase_HighRes.png"></a></li>
+      after: <li><a href="https://bookdown.org/" target="blank">Published with bookdown</a></li>
     toolbar:
       position: fixed
     edit: https://github.com/solgenomics/sgn/docs/edit/master/%s
