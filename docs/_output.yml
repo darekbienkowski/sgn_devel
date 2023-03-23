@@ -1,7 +1,7 @@
 bookdown::gitbook:
   config:
     toc:
-      collapse: subsection
+      collapse: section
       scroll_highlight: true
       before: null
       after: null
@@ -10,7 +10,7 @@ bookdown::gitbook:
     edit: https://github.com/solgenomics/sgn/docs/edit/master/%s
     download: ["pdf"]
     search:
-      engine: lunr # or fuse
+      engine: fuse # or lunr
       # options to control/tune search engine behavior (for
       # fuse.js, refer to https://fusejs.io/api/options.html)
       options: null

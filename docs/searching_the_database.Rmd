@@ -58,11 +58,11 @@ knitr::include_graphics('assets/images/wizard_any_min_all_toggle_min_details.jpg
 
 ### How to use retrieved data 
 
-#### Getting more Info
+#### Getting more Info {-}
 
 Any option in the wizard select boxes (except for years) can be clicked to open a page with more details. The new page is opened in a new tab.
 
-#### Saving to a list
+#### Saving to a list {-}
 
 You can store the highlighted items in any selected box to lists. This is done using the inputs and buttons directly below the select box. **Don’t forget, you must be logged in to work with lists!**
 
@@ -74,7 +74,7 @@ knitr::include_graphics('assets/images/add_create_list.png')
 
 -   To **store items to a new list**, first type a new list name in the "Create New List..." text input on the left. Then click on the "Create" button. A popup window will confirm the action, and display the number of items added to your new list.
 
-#### Downloading Data
+#### Downloading Data {-}
 
 You can download trial metadata, phenotypes and genotypes associated with the highlighted items in the wizard select boxes. This is done using the buttons in the download section at the bottom of the page. **Don’t forget, you must be logged in to download data!**
 
@@ -82,7 +82,7 @@ You can download trial metadata, phenotypes and genotypes associated with the hi
 knitr::include_graphics('assets/images/wizard_download_options.png')
 ```
 
-##### Metadata
+##### Metadata {-}
 
 Trial metadata can be downloaded by selecting a subset of trials from the database or based on your search categories.  To download, click on "Related Trial Metadata", a dialog will appear. Select download format and click the "Metadata" button to complete your download. 
 
@@ -90,7 +90,7 @@ Trial metadata can be downloaded by selecting a subset of trials from the databa
 knitr::include_graphics('assets/images/wizard_related_metadata_download.png')
 ```
 
-##### Phenotypes
+##### Phenotypes {-}
 
 The phenotypes download is quite flexible, and can download a subset of all the trial data in the database based on whichever categories and options you currently have selected. Simply click on the “Related Trial Phenotypes” link, review the options, changing or adding any additional parameters you like, then click ‘Download Phenotypes’.
 
@@ -98,11 +98,11 @@ The phenotypes download is quite flexible, and can download a subset of all the 
 knitr::include_graphics('assets/images/wizard_related_phenotypes_download.png')
 ```
 
-##### Genotypes
+##### Genotypes {-}
 
 The genotype download is more stringent. It requires a minimum of one accession and one genotyping protocol to be selected in the wizard select boxes. The text box in the download section of the page will help track what has been selected. Once clicked, the “Download Genotypes” button will download a genotype file for the selected accessions.
 
-#### Saving the wizard selections
+#### Saving the wizard selections {-}
 
 As discussed above, the selections of the individual select boxes in the wizard can be saved separately to a list. The lists can be used as inputs in other tools on the site. However, sometimes creating a selection is quite time consuming and restoring the selections from four different lists would be cumbersome too. Therefore, the selections can be saved together in a dataset, and named for later retrieval. This is done in the section "Load/Create Datasets" that is below the first two wizard select boxes. To select an existing dataset, one uses the "Load Dataset" dropdown. A particular dataset can be chosen, and the "Load" button can be clicked to retrieve and display the dataset in the wizard. To create a new dataset using items that are selected in the wizard, one can enter the name of the new dataset in the "Create New Dataset" text box. Once the dataset has been given a name, clicking the "Create" button will save the new dataset.
 

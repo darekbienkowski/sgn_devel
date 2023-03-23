@@ -40,7 +40,7 @@ To inventory your seed:
 1) Make sure your seedlots are in the database. Use "Add New Seedlot" to add a single seedlot or "Upload New Seedlots" to add many.
 2) Make sure your seedlots are barcoded. You can print these barcodes from the database.
 3) Use the "Inventory" Android Application to scan seedlot barcodes and record weight. Then use "Upload Inventory" to upload this info into database. If you prefer you can create your own CSV file and upload that, if you do not want to use the Inventory Application.
-<b>For more info about the "Inventory" Android Application go to <a href="https://play.google.com/store/apps/details?id=org.wheatgenetics.inventory/">Inventory</a>.
+<b>For more info about the "Inventory" Android Application go to <a href="https://play.google.com/store/apps/details?id=org.wheatgenetics.inventory/">Inventory</a></b>.
 
 Clicking the "Upload Inventory" button will bring the following dialog:
 
@@ -88,7 +88,8 @@ For some crops, such as sugar kelp, a "seedlot" requires routine maintenance for
 
 Each Breedbase instance needs to be configured to support the storage of Seedlot Maintenance Events since each crop will have their own distinct set of maintenance events for their seedlots.  To check if your Breedbase instance supports this feature, go to the Manage menu and select the Seed Lots page.  Make sure you are logged in and look for the **Seedlot Maintenance** button near the top, next to the **Create Seedlot(s)** and **Upload Inventory** buttons.  If you don't see this button, contact the developer(s) supporting your Breedbase instance and ask if they can setup this feature.
 
-![The Manage Seedlots page showing the location of the Seedlot Maintenance button]({{"assets/images/manage_seedlots_seedlot_maintenance.png')
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/manage_seedlots_seedlot_maintenance.png')
 ```
 *The location of the Seedlot Maintenance button on the Manage &gt; Seed Lots page*
 
@@ -96,7 +97,7 @@ Each Breedbase instance needs to be configured to support the storage of Seedlot
 
 Seedlot Maintenance Events can be added using two methods: 1) Uploading an Excel template or 2) Recording events directly on the website
 
-#### Uploading Events with Excel Template
+#### Uploading Events with Excel Template {-}
 
 To bulk-upload a file of Seedlot Maintenance Events, first create an Excel (.xls or .xlsx) file with the following headers:
 
@@ -116,11 +117,12 @@ Once you have an Excel file with the events filled out, follow these steps to up
 5. Choose your Excel (.xls or .xlsx) file to upload
 6. Select the **Upload** button
 
-![The Seedlot Maintenance upload dialog]({{"assets/images/seedlot_maintenance_upload.png')
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/seedlot_maintenance_upload.png')
 ```
 *The Seedlot Maintenance upload dialog, showing the supported event types and values (for sugar kelp)*
 
-#### Recording Events on Website
+#### Recording Events on Website {-}
 
 To add individual Seedlot Maintenance Events to the database in real time, as they're being recorded, use the **Record Maintenance** page.  Follow these steps to record Seedlot Maintenance Events:
 
@@ -134,7 +136,8 @@ To add individual Seedlot Maintenance Events to the database in real time, as th
 8. Make sure the operator/username and timestamp are correct
 9. Select the **Submit** button to add the recorded events to the database. NOTE: any events that remain selected as "Not Recorded" will not be submitted to the database.
 
-![The Seedlot Maintenance record page]({{"assets/images/seedlot_maintenance_record.png')
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/seedlot_maintenance_record.png')
 ```
 *The Seedlot Maintenance record page, as configured for sugar kelp*
 
@@ -142,7 +145,8 @@ To add individual Seedlot Maintenance Events to the database in real time, as th
 
 Recently recorded Seedlot Maintenance Events are displayed in a table from the main Seedlot Maintenance page, as well as the detail page for individual Seedlots.
 
-![Unfiltered table of recent Seedlot Maintenance events]({{"assets/images/seedlot_maintenance_events_unfiltered.png')
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/seedlot_maintenance_events_unfiltered.png')
 ```
 *Unfiltered table of recent Seedlot Maintenance events*
 
@@ -155,7 +159,8 @@ The events displayed in these tables are sorted by timestamp, with the most rece
 
 Select the properties of the filter(s) you want to apply, then select the **Add** button next to the button to add the filter to the list of applied filters.  Once you're done adding filters, select the **Filter** button to search the database for the filtered events.
 
-![A filtered table of Seedlot Maintenance events]({{"assets/images/seedlot_maintenance_events_filtered.png')
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics('assets/images/seedlot_maintenance_events_filtered.png')
 ```
 *A filtered table of Seedlot Maintenance events*
 

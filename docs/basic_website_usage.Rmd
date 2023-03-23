@@ -74,7 +74,7 @@ knitr::include_graphics('assets/images/image270.png')
 
 ### Menu Options
 
-#### Search
+#### Search {-}
 
 In the Search menu, the options are:
 
@@ -87,7 +87,7 @@ In the Search menu, the options are:
 | Images                | Search images contained in the SGN database                                                                                            |
 | People                | Search database users                                                                                                               |
 
-#### Manage
+#### Manage {-}
 
 In the Manage menu, the options are:
 
@@ -105,7 +105,7 @@ In the Manage menu, the options are:
 | Barcodes            | Refers to the old barcode system, mainly historical                                                |
 | Download            | Download information in the database based on lists                                                |
 
-#### Analyze
+#### Analyze {-}
 
 **Clicking on the "Analyze" link will give a full menu of all analysis functions**  
 In the Analyze menu, the options are:

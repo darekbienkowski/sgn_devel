@@ -136,7 +136,7 @@ knitr::include_graphics('assets/images/image147.png')
 ```
 
 
-#### Estimating breeding values in a selection population
+#### Estimating breeding values in a selection population {-}
 
 If you already have a selection population (in the database), from the same model page, you can apply the model to the selection population and estimate breeding values for all the clones in the population. You can search for a selection population of clones in the database using the search interface or you can make a custom list of clones using the [*list interface*](#working-with-lists). If you click the 'search for all relevant selection populations', you will see all relevant selection populations for that model. However, this option takes long time decause of the large set of populations in the database and the filtering. Therefore, the fastest way is to search for each of your selection populations by name. If you are logged in to the website you will also see a list of your custom set of genotyped clones.
 
@@ -605,7 +605,3 @@ The next step is to select the selection index for your traits on the dropdown m
 
 Once you are through, click "Run GCPC" to run the model. The output will be presented in form of a table with "ID", "Parent1", "Parent2" and their cross prediction merit organized in descending order.
 The results will also have sex information based on whether the dataset has plant sexes available in the database.
-
-# ```{r echo=FALSE, fig.align='center'}
-# knitr::include_graphics('assets/images/gcpc.png')
-# ```

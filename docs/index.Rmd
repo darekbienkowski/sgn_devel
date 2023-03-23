@@ -1,6 +1,5 @@
 --- 
 title: "Breedbase User Manual"
-author: "Breedbase team"
 date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
 documentclass: krantz
@@ -15,7 +14,11 @@ cover-image: assets/images/Breedbase_HighRes.png
 site: bookdown::bookdown_site
 ---
 
-# Preface {-}
+# Intro {-}
+
+```{r echo=FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics('assets/images/Breedbase_HighRes.png')
+```
 
 Welcome to the Breedbase manual! Use the table of contents in the left sidebar to navigate to the topic of your choice.
 
@@ -23,7 +26,7 @@ You may also use the widgets at the top of the screen to:
 
 - collapse the sidebar
 - search for a specfic topic
-- change the font size or type
+- change the font size, font type, or the site theme
 - suggest an edit
 - download the manual as a pdf
 

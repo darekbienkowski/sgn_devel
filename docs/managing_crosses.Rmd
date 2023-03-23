@@ -47,7 +47,7 @@ knitr::include_graphics('assets/images/add_crossingtrial.png')
 
 ### Add New Crosses
 
-#### Add a cross by using the "Add New Cross" dialog
+#### Add a cross by using the "Add New Cross" dialog {-}
 
 To add a single new cross, click on "Add Cross" link.
 
@@ -95,7 +95,7 @@ knitr::include_graphics('assets/images/add_cross_info.png')
 
 Click "Submit" to generate the cross.
 
-#### Upload New Crosses
+#### Upload New Crosses {-}
 
 To upload new crosses from an Excel file (.xls or .xlsx), click on "Upload Crosses" link.
 
@@ -149,7 +149,7 @@ knitr::include_graphics('assets/images/manage_cross_click_cross_wishlist.png')
 
 ### Create a Cross Wishlist
 
-#### Step 1. Select the accessions to be crossed in your trial
+#### Step 1. Select the accessions to be crossed in your trial {-}
 
 There are two interfaces for this step, either "Not Using Lists" or "Using Lists". Depending on if you already have a list of female and male accessions to use, you can decide on which interface to use. The end result of using either interface is the same.
 
@@ -181,7 +181,7 @@ Alternatively, we could have used the "Using List" interface instead. Here we se
 knitr::include_graphics('assets/images/cross_wishlist_using_list_01.png')
 ```
 
-#### Step 2. Select the female plots to be considered in the crosses
+#### Step 2. Select the female plots to be considered in the crosses {-}
 
 After selecting your lists, the table below is populated. The first column has all the female accessions specified and the header row has all the male accessions specified. The males to consider crossing with each female are indicated with priority.
 
@@ -195,7 +195,7 @@ After female and male accessions are selected to cross, either by the "Nor Using
 knitr::include_graphics('assets/images/cross_wishlist_not_using_list_04.png')
 ```
 
-#### Step 3. Transfer the cross wishlist to your mobile crossing application
+#### Step 3. Transfer the cross wishlist to your mobile crossing application {-}
 
 Clicking "Push Cross Wishlst for ODK Use" will send the cross wishlist plan to the ONA server for use by the mobile ODK application. Crosses can then be performed and recorded in the field using the mobile application. Afterwards, the crosses are sent back to our database and stored.
 
