@@ -7,7 +7,7 @@ ODK is used for remotely collecting data on Android and IOS devices. We currentl
 
 ### Managing ONA Crossing Information
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/odk_ona_management.png')
 ```
 
@@ -23,7 +23,7 @@ As you collect data using your mobile ODK application, your responses will be sy
 The mobile ODK application has options to collect information about the status of plants in the field, such as if they are flowering. Images for each plant can also be recorded.
 The database will report this information here in a summary table that looks like the following. Notice that images are also transferred to the database.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/odk_ona_cross_status.png')
 ```
 
@@ -31,7 +31,7 @@ knitr::include_graphics('assets/images/odk_ona_cross_status.png')
 
 There is a section to summarize activities done for each cross. In this table each row represents a single cross performed. All the activities that have been performed will be shown here, such as "first pollination" and "embryo rescue". The scatter plot shown tracks seed numbers generated on the Y axis and date of activity on the X axis.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/odk_ona_cross_progress_graph.png')
 ```
 
@@ -39,6 +39,6 @@ knitr::include_graphics('assets/images/odk_ona_cross_progress_graph.png')
 
 There is a secondary section to summarize what has been done across the entire Cross Wishlist. This tree structure shows all activities performed for a cross and shows how these crosses relate to the Cross Wishlist.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/odk_ona_cross_progress_tree.png')
 ```

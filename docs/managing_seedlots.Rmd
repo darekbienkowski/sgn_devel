@@ -2,7 +2,7 @@
 
 Seedlots are different from Accessions in that they represent the physical seed being evaluated in an experiment. Seedlots have things like physical storage locations and seed quantities, which accessions do not. The seed in seedlots can be from crosses or can be named accessions. Seedlots from crosses would represent seed harvested. Click Manage and then Seed Lots to begin.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlots.png')
 ```
 
@@ -10,13 +10,13 @@ knitr::include_graphics('assets/images/manage_seedlots.png')
 
 To add a single new seedlot, click on "Add Seedlot". This will bring up the following dialog where you enter information about where the seedlot exists, what accession or cross is contained in it, and how many seeds there are. A seedlot must contain either an accession or a cross, and not both. A seedlot must have a weight in grams or a seed count or both of these.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlot_add_seedlot.png')
 ```
 
 In the case where you have many seedlots to add to the database, you can upload an excel XLS or XLSX file instead. Click "Upload Seedlots" to see the following dialog.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlot_upload_seedlots.png')
 ```
 
@@ -24,13 +24,13 @@ knitr::include_graphics('assets/images/manage_seedlot_upload_seedlots.png')
 
 Seedlots are capable of tracking where seeds came from, such as from crosses, and to where seeds go, such as to plots in the field. If you navigate to a seedlot detail page you will see the following.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/seedlot_detail_page.png')
 ```
 
 On this page you see and can edit information regarding a single seedlot, such as its name and location. You will also see a table indicating all t he transactions that a seedlot has been involved in, such as if it was planted in a plot in the field. Transactions to field plots are created when adding or uploading a new trial or from a trial's detail page. Clicking on "Add New Transaction" let you add a transaction from between this seedlot and another seedlot. This kind of transaction is useful for representing if you have distributed seed to different locations.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/seedlot_add_new_transaction.png')
 ```
 
@@ -44,13 +44,13 @@ To inventory your seed:
 
 Clicking the "Upload Inventory" button will bring the following dialog:
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlot_upload_inventory.png')
 ```
 
 The CSV file that should contain your inventory should meet these Template requirements. The Seed Inventory Android Application exports this exact file.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlot_upload_inventory_template.png')
 ```
 
@@ -58,13 +58,13 @@ knitr::include_graphics('assets/images/manage_seedlot_upload_inventory_template.
 
 A convenient tool for searching available seedlots for a list of accessions is available in the list tool. First open up your list of accessions. For help opening a list of accessions please see the List section help. There is a button called "See Available Seedlots".
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlot_accession_list_search.png')
 ```
 
 Once you click this, you will see the following table in a dialog. From here you can create a list of seedlots using the checkboxes and the input at the bottom.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlot_list_available_seedlots.png')
 ```
 
@@ -72,7 +72,7 @@ knitr::include_graphics('assets/images/manage_seedlot_list_available_seedlots.pn
 
 Complementary to what we saw above for creating seedlots from the "Manage Seedlots" page, it is possible to create a new seedlot from an accession's detail page or from the cross detail page. On the accession detail page, this is visible in the "Related Stocks" section as seen below. The cross detail page has an identical section. Notice the link for creating a new seedlot, which streamlines adding the seedlot.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlot_accession_detail.png')
 ```
 
@@ -88,7 +88,7 @@ For some crops, such as sugar kelp, a "seedlot" requires routine maintenance for
 
 Each Breedbase instance needs to be configured to support the storage of Seedlot Maintenance Events since each crop will have their own distinct set of maintenance events for their seedlots.  To check if your Breedbase instance supports this feature, go to the Manage menu and select the Seed Lots page.  Make sure you are logged in and look for the **Seedlot Maintenance** button near the top, next to the **Create Seedlot(s)** and **Upload Inventory** buttons.  If you don't see this button, contact the developer(s) supporting your Breedbase instance and ask if they can setup this feature.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_seedlots_seedlot_maintenance.png')
 ```
 *The location of the Seedlot Maintenance button on the Manage &gt; Seed Lots page*
@@ -117,7 +117,7 @@ Once you have an Excel file with the events filled out, follow these steps to up
 5. Choose your Excel (.xls or .xlsx) file to upload
 6. Select the **Upload** button
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/seedlot_maintenance_upload.png')
 ```
 *The Seedlot Maintenance upload dialog, showing the supported event types and values (for sugar kelp)*
@@ -136,7 +136,7 @@ To add individual Seedlot Maintenance Events to the database in real time, as th
 8. Make sure the operator/username and timestamp are correct
 9. Select the **Submit** button to add the recorded events to the database. NOTE: any events that remain selected as "Not Recorded" will not be submitted to the database.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/seedlot_maintenance_record.png')
 ```
 *The Seedlot Maintenance record page, as configured for sugar kelp*
@@ -145,7 +145,7 @@ knitr::include_graphics('assets/images/seedlot_maintenance_record.png')
 
 Recently recorded Seedlot Maintenance Events are displayed in a table from the main Seedlot Maintenance page, as well as the detail page for individual Seedlots.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/seedlot_maintenance_events_unfiltered.png')
 ```
 *Unfiltered table of recent Seedlot Maintenance events*
@@ -159,7 +159,7 @@ The events displayed in these tables are sorted by timestamp, with the most rece
 
 Select the properties of the filter(s) you want to apply, then select the **Add** button next to the button to add the filter to the list of applied filters.  Once you're done adding filters, select the **Filter** button to search the database for the filtered events.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/seedlot_maintenance_events_filtered.png')
 ```
 *A filtered table of Seedlot Maintenance events*

@@ -3,9 +3,8 @@ title: "User Manual"
 author: "Breedbase team"
 date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
+graphics: yes
 colorlinks: yes
-lot: yes
-lof: yes
 fontsize: 12pt
 description: "A manual for all things Breedbase. How to create an account, search the database, manage different data types, and analyze data."
 url: 'https://solgenomics.github.io/'

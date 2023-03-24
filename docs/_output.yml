@@ -1,25 +1,30 @@
 bookdown::gitbook:
+  split_by: section
   css: assets/style.css
   includes:
       in_header: hypothesis.html
   config:
     toc:
       collapse: section
-      scroll_highlight: true
       before: <li class="toc-logo"><a href="./"><img src="assets/images/Breedbase_HighRes.png"></a></li>
       after: <li><a href="https://bookdown.org/" target="blank">Published with bookdown</a></li>
-    toolbar:
-      position: fixed
     edit: https://github.com/solgenomics/sgn/docs/edit/master/%s
     download: ["pdf"]
-    search:
-      engine: fuse # or lunr
-      # options to control/tune search engine behavior (for
-      # fuse.js, refer to https://fusejs.io/api/options.html)
-      options: null
-    fontsettings:
-      theme: white
-      family: sans
-      size: 2
     sharing: false
     info: false
+bookdown::pdf_book:
+  includes:
+    in_header:
+    before_body:
+    after_body:
+  keep_tex: yes
+  fig_crop: false
+  latex_engine: xelatex
+  citation_package: natbib
+  template: null
+  pandoc_args: [--top-level-division=chapter, --wrap=none]
+  toc_depth: 3
+  toc_unnumbered: no
+  toc_appendix: yes
+  highlight_bw: yes
+  quote_footer: ["\\VA{", "}{}"]

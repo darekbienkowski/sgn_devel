@@ -12,7 +12,7 @@ In the "Search" menu, selecting the "People" tab and search your name. If nothin
 
 On the right of the toolbar, clicking on “Login.” It will take you to the login page. On the login page, clicking on the link “sign up for an account.” It will take you to the page below:
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image331.png')
 ```
 
@@ -28,7 +28,7 @@ To login, clicking the "Login" link in the toolbar on any page and enter your us
 
 If you have forgotten your password, you can retrieve it by clicking the "Forgot your password?" link on the login page.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image166.png')
 ```
 
@@ -36,7 +36,7 @@ knitr::include_graphics('assets/images/image166.png')
 
 Account settings can be edited by clicking on the "my profile" link displayed as your user name, on the right of the toolbar. You must login, in order to access and change account settings.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image261.png')
 ```
 
@@ -44,7 +44,7 @@ You can add personal information to your account using the "View or update perso
 
 To change your password, username, or your contact email, clicking on “Update account information” link. You must provide your old password before you can make any changes.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image144.png')
 ```
 
@@ -68,7 +68,7 @@ We appreciate your feedback! Feel free to submit any questions or suggestions by
 
 SGN Database websites have a toolbar on the top of each page with a number of menus for convenient access of major functions. The menus, as pictured below, are “search,” “manage,” “analyze,” and “maps.” The toolbar also provides a quick search, a “log in” button, and a “new user” button.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image270.png')
 ```
 
@@ -131,43 +131,43 @@ Lists can be generated in various ways:
 
 One way to create a list is by clicking on the "Lists" link located on the toolbar.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/list_manager_start.png')
 ```
 
 To create a new list, enter the name of your new list and then clicking on the “New List” button. The name of the list can be anything, but should be unique and should be something to help you easily identify.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/list_manager_new_list.png')
 ```
 
 You can find the list that you entered on the “Your Lists” page. To add items to your list, click on the "View" icon to open “List Contents” page.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/list_manager_view_list.png')
 ```
 
 On the “List Contents” page, enter items that you want to add to the list, then click on “Add” button.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/list_manager_add_items.png')
 ```
 
 The page will be updated and will display your items in a table at the bottom of the page. It is possible to sort the list if you need.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/list_manager_added_items.png')
 ```
 
 Select the type of items in your list. To verify that the items that you added to your list are already stored in the database and that you selected a correct type for the items, click on the “Validate” button.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/list_manager_list_types.png')
 ```
 
 If those items are already in the database, a message will indicate that “This list passed validation”
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image346.png')
 ```
 
@@ -179,7 +179,7 @@ Another easy way to create a list is to use \@ref(search-wizard), which can be a
 
 Lists can be viewed and edited using the "Lists" link on the toolbar. Clicking on the link will open a window that displays all of your lists, as well as an option to create new lists.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image71.png')
 ```
 
@@ -193,7 +193,7 @@ This page shows all lists that have been created, including those created by usi
 
 4. Clicking on the “make public” icon will make your list available for other users to view and use your list.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/image297.png')
 ```
 
@@ -202,7 +202,7 @@ knitr::include_graphics('assets/images/image297.png')
 
 Breedbase accounts are assigned one or more of four different roles to determine the level of access they have within the database. The possible roles are **User**, **Submitter**, **Sequencer**, and **Curator**. Each role grants specific permissions, and careful management of them helps prevent data from being altered or deleted in error.
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, out.width='90%', fig.align='center'}
 knitr::include_graphics('assets/images/roles.png')
 ```
 

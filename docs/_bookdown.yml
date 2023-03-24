@@ -27,9 +27,9 @@ rmd_files: [
   ]
 book_filename: BreedbaseManual
 repo: https://github.com/solgenomics/sgn
-output_dir: _book
 delete_merged_file: true
 language:
   ui:
     edit: "Edit"
     chapter_name: "Chapter "
+
