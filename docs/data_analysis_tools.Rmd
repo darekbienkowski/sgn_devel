@@ -2,62 +2,62 @@
 
 SGN databases provides several tools for phenotype data analysis, marker-assisted selection, sequence and expression analyses, as well as ontology browser. These tools can be found in the “Analyze” menu.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image114.png')
 ```
 ## Selection Index
 
 To determine rankings of accessions based on more than one desirable trait, SGN databases provide a “Selection Index” tool that allows you to specify a weighting on each trait. To access the tool, clicking on “Selection Index” in the “Analyze” menu.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image251.png')
 ```
 
 On the Selection Index page, selecting a trial that you want to analyze.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image95.png')
 ```
 
 After you selected a trial, you can find traits that were assayed in that trial in the “Trait” box.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image78.png')
 ```
 
 Selecting a trait that you want to include in the analysis will open a new dialogue showing the selected trait and a box that you can assign a “Weight” of that trait. After you are done, you can continue by selecting another trait by clicking on “Add another trait” link.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image304.png')
 ```
 
 After you selected another trait, this page will automatically update information for you by showing all of the traits that you selected for the analysis.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image76.png')
 ```
 
 You also have options to choose a reference accession, choose to include accessions with missing phenotypes, scaling values to a reference accession. After you complete your setting, clicking on “Calculate Rankings”
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image343.png')
 ```
 
 The Selection Index tool will generate rankings of accessions based on the information that you specified. You can copy the results to your system clipboard, convert the table data to CSV format, or print the data.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image326.png')
 ```
 
 Clicking on “Raw Average” will display average values of the phenotypes of those ranked accessions.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image150.png')
 ```
 
 Selection Index tool also allows you to save top ranked accessions directly to “Lists”. You can retrieve top ranked accessions by selecting a number or a percent.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image156.png')
 ```
 
@@ -67,7 +67,7 @@ The prediction of breeding values for a trait is a one step or two steps process
 
 To use the genomic selection tool, on [*cassavabase.org*](http://cassavabase.org/), select 'Genomic Selection' from the 'analyze' pull-down menu.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image247.png')
 ```
 
@@ -77,19 +77,19 @@ There are three ways to build a model for a trait.
 
 One way to build a model is, using a trait name, to search for trials in which the trait was phenotyped and use a trial or a combination of trials to build a model for the trait. For example, if you search for 'mosaic disease severity, you will get a list of trials you can use as training populations.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image160.png')
 ```
 
 You will get a list of trials (as shown below) in which the trait of your interested was phenotyped. From the list, you can use a single trial as a training population or combine several trails to form a training population for the prediction model of the trait. Let's say, you want to create a training population using individuals from trials 'cassava ibadan 2001/02' and 'cassava ibadan 02/03' and build a model for 'cassava mosaic disease severity' using all clones from the training population.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image249.png')
 ```
 
 Select the trials to combine (the same coloured), click ‘done selecting’, click the 'combine trials and build model' button, and you will get a model and its output for the trait. On the model detail page, you can view the description of input data used in the model, output from the model and search interface for selection populations the model you can apply to predict their breeding values. The description of the input data for the model includes the number of phenotyped clones, and the number of markers, scatter and frequency distribution plots for the phenotype data, relationship between the phenotype data and GEBVs, population structure. The model output includes model parameters, heritability of the trait , prediction accuracy, GEBVs of the individuals from the training population and marker effects.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image330.png')
 ```
 
@@ -97,41 +97,41 @@ Expand each section to see detailed information.
 
 If you expand the ‘Trait phenotype data’ section, you will find plots to explore the phenotype data used in the model. You can assess the phenotype data using a scatter and histogram plots and the descriptive statistics.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image244.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image263.png')
 ```
 
 A regression line between observed phenotypes and GEBVs shows the relationship between the two.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image83.png')
 ```
 
 You can also explore if there is any sub-clustering in the training population using PCA.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image93.png')
 ```
 
 To check the model accuracy, a 10-fold cross-validation test, expand the ‘model accuracy’ section.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image328.png')
 ```
 
 Marker effects are also available for download. To do so, expanad the ‘Marker Effects’ section and click the ‘Download all marker effects’ link and you will get a tab delimited output to save on your computer.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image74.png')
 ```
 
 The breeding values of the individuals used in the training population are displayed graphically. Mousing over each data point displays the clone and its breeding value. To examine better, you can zoom in into the plot by selecting an area on the plot. You can download them also by following the 'Download all GEBVs' link.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image147.png')
 ```
 
@@ -140,13 +140,13 @@ knitr::include_graphics('assets/images/image147.png')
 
 If you already have a selection population (in the database), from the same model page, you can apply the model to the selection population and estimate breeding values for all the clones in the population. You can search for a selection population of clones in the database using the search interface or you can make a custom list of clones using the [*list interface*](#working-with-lists). If you click the 'search for all relevant selection populations', you will see all relevant selection populations for that model. However, this option takes long time decause of the large set of populations in the database and the filtering. Therefore, the fastest way is to search for each of your selection populations by name. If you are logged in to the website you will also see a list of your custom set of genotyped clones.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image338.png')
 ```
 
 To apply the model to a selection population, simply click your population name or 'Predict Now' and you will get the predicted breeding values. When you see a name of (or acronym\]) of the trait, follow the link and you will see an interactive plot of the breeding values and a link to download the breeding values of your selection population.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image334.png')
 ```
 
@@ -156,45 +156,45 @@ Another way to build a model is by selecting a trial, instead of selecting and s
 
 To do this select the "Genomic Selection" link found under the "analyze" menu. This will take you to the same home page as used with Method 1. However, instead of entering information to search for in "Search for a trait", click on "Use a trait as a trial population". This will expand a new menu that will show all available trials.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image344.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='25%', fig.align='center'}
 knitr::include_graphics('assets/images/image329.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image341.png')
 ```
 
 To begin creating the model, select the existing trial that you would like to use. In this example I will be using the trial and trait data from "Cassava Ibadan 2002/03" trial. Clicking on a trial will take you to a page where you can find information such as number of markers and number of phenotypes clones.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image322.png')
 ```
 
 In addition to the number of phenotype clones and number of markers, the main page for the trial selected also has information and graphs on phenotypic correlation for all of the traits. By moving your cursor over the graph you can read the different values for correlation between two traits. A key with all of the trait names of the acronyms used can be found in the tab below the graph.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image151.png')
 ```
 
 Below the "Training population summary" there is a tab for "Traits". Clicking on this tab will show all available traits for the specific trial. You can create a model by choosing one or multiple traits in the trial and clicking "Build Model". In this example, the traits for "cassava bacterial blight severity" and "cassava mosaic disease severity" have been selected.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image69.png')
 ```
 
 Clicking on 'Build Model' will take you to a new page with the models outputs for the traits. Under the "Genomic Selection Model Output" tab you can view the model output and the model accuracy. Clicking on any of the traits will take you to a page with information about the model output on that individual trait within the trial. There you can view all of the trait information that was seen in more detail in [*Method 1*](#method-1).
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image336.png')
 ```
 
 You can apply the models to simultaneously predict GEBVs for respective traits in a selection population by clicking on "Predict Now" or the name of the selection population. You can also apply the models to any set of genotyped clones that you can create using the 'lists' feature. For more information on lists, click [*here*](#working-with-lists). Follow the link to the trait name to view and download the predicted GEBVs for the trait in a selection population.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image171.png')
 ```
 
@@ -202,7 +202,7 @@ To compare clones based on their performance on multiple traits, you can calcula
 
 In this example we will be using the "Cassava Ibadan 2002/03" population and assigning values to each of the traits. Remember that there is a list of acronyms and trait names at the bottom of the page for reference. After entering whatever values you would like for each trait click on the "Calculate" button to generate results. This will create a list of the top 10 genotypes that most closely match the criteria that you entered. The list will be displayed right below the "selection index" tab. This information can also be downloaded onto your computer by clicking on the "Download selection indices" link underneath the listed genotypes and selection indices.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image81.png')
 ```
 
@@ -212,7 +212,7 @@ In addition to creating a model by searching for pre-existing traits or by preex
 
 The page to use the third Method for creating a population model is the same as for the other two models. Select "Genomic Selection" from under the "analyze" menu of the main toolbar. This will take you to the Genomic Selection homepage and show you all three available methods to create a model. To see and use Method 3 scroll down and click on the tab labeled "Create a Training Population". This will open a set of tools that will allow you to use pre-existing lists or to create a new list.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image138.png')
 ```
 
@@ -222,7 +222,7 @@ Please note: the only lists that can be used in Method 3 to create a model are l
 
 To use your custom list of plots or trials as a training population, select the list and click "Go". This will take you to a detail page for the training population.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image181.png')
 ```
 
@@ -236,19 +236,19 @@ There are two ways to evaluate genotype information within the browser, from an 
 
 If you are interested in browsing genotype information for a single accession, for example ‘BAHKYEHEMAA’, navigate to the accession detail page.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='50%', fig.align='center'}
 knitr::include_graphics('assets/images/image152.png')
 ```
 
 Near the bottom of the detail page is a collapsible section called “Accession Jbrowse”.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='50%', fig.align='center'}
 knitr::include_graphics('assets/images/image20.png')
 ```
 
 This section will contain a link to the accession jbrowse page if the necessary genotype data is available. Clicking the link should take you to a page that looks like this, a which point you can browsre the genotype data in the form of a vcf track aligned to the latest build of the genome.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image318.png')
 ```
 
@@ -256,19 +256,19 @@ knitr::include_graphics('assets/images/image318.png')
 
 If you are interested in browsing genotype information for the accessions within a given trial, navigate to the trial detail page.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='50%', fig.align='center'}
 knitr::include_graphics('assets/images/image277.png')
 ```
 
 Halfway down the page is a collapsible section called “Trial Jbrowse”. This section will contain a link to the trial jbrowse page if the necessary genotype data for at least two accessions planted in the trial is available.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='50%', fig.align='center'}
 knitr::include_graphics('assets/images/image268.png')
 ```
 
 Clicking the link should take you to a page that looks like this, a which point you can browse the genotype data in the form of vcf tracks aligned to the latest build of the genome.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image327.png')
 ```
 
@@ -288,7 +288,7 @@ You can run PCA from multiple places on the website. To do PCA on
 
 (5) individuals from multiple trials, create a list of the trials using the search wizard, go to the 'Analyze' menu and select the 'Population Structure', select your list of trials and run PCA.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/pca_iita_naccri_trials.png')
 ```
 
@@ -307,7 +307,7 @@ You can do ANOVA from two places: trial detail and training population detail. I
 
 -- Click the 'Run ANOVA' and wait for the result
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/anova-dm.png')
 ```
 
@@ -349,13 +349,13 @@ There are three pathways to using this tool.
 
 K-Means clustering:
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/k-means-cluster.png')
 ```
 
 Hierarchical clustering:
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/hclustering.png')
 ```
 
@@ -363,7 +363,7 @@ knitr::include_graphics('assets/images/hclustering.png')
 
 You can check for genetic gain by comparing the the GEBVs of a training and a selection population. You can do this in the solGS pipepline once you build a model and apply the model to predict the GEBVs of a selection population. Once at that stage, you will see a section 'Check Genetic Gain'. Select a selection population to compare with the training population and click the 'Check Genetic Gain' button. The genetic gain will be visualized in boxplots. You can download the boxplot(s) as well as the GEBVs data used for the plot(s).
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/genetic-gain.png')
 ```
 
@@ -398,7 +398,7 @@ There are three pathways to using this tool.
 
    (A) -- Once you you are in a model output put page, scroll down to the 'Kinship and Inbreeding' section and run kinship.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/kinship-inbreeding.png')
 ```
 
@@ -426,7 +426,7 @@ The procedure is:
 
    -- then run cluster and wait for the result.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/selection_proportion_clustering.png')
 ```
 
@@ -434,7 +434,7 @@ knitr::include_graphics('assets/images/selection_proportion_clustering.png')
 
 The genomic relationship matrix (GRM) is useful for understanding underlying structure in your population. Breedbase can compute the GRM using rrBLUP. First, select accessions in the search wizard and optionally select a genotyping protocol. If no genotyping protocol is selected, the default genotyping protocol in your system is used (as defined in sgn_local.conf). Specify the minor allele frequency, missing marker data, and missing individuals data filters to apply. The GRM can be returned in a matrix format (.tsv) which shows all pairwise relationships between the selected accessions and is useful for visualization; alternatively, the GRM can be returned in a three-column format (.tsv) which is useful for programs like ASReml outside of Breedbase. The GRM can also be returned as a simple correlation heatmap image (.pdf). The GRM can be computed from parents of the selected accessions granted the parents were genotyped, by clicking the checkbox "compute from parents"; this is useful for programs where parental lines are genotyped and then hybrids are created and evaluated in the field.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/search_wizard_genotype_analyses_grm.png')
 ```
 
@@ -445,15 +445,15 @@ Performing a genome wide association study (GWAS) can determine genotypic marker
 
 The GWAS will filter the data by the input MAF and missing data filters provided. After filtering the data is imputed using an 'EM' method in rrBLUP. The Kinship matrix (GRM) is computed from the imputed genotypic data and used in the GWAS model. The GWAS uses fixed effects for different field trials and replicates in the phenotypic data.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/search_wizard_genotype_analyses_gwas.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/search_wizard_genotype_analyses_manhattan_plot.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/search_wizard_genotype_analyses_qq_plot.png')
 ```
 
@@ -462,18 +462,18 @@ knitr::include_graphics('assets/images/search_wizard_genotype_analyses_qq_plot.p
 
 Visible and near-infrared spectroscopy (vis-NIRS) can be related to reference phenotypes through statistical models to produce accurate phenotypic predictions for unobserved samples, increasing phenotyping throughput. This technique is commonly used for predicting traits such as total starch, protein, carotenoid, and water content in many plant breeding programs. Breedbase implements the R package [*waves*](https://CRAN.R-project.org/package=waves) to offer training, evaluation, storage, and use of vis-NIRS prediction models for a wide range of spectrometers and phenotypes.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/waves_breedbase_schema.png')
 ```
 
 ### Dataset selection
 In order to initiate an analysis, the user must select one or more datasets using \@ref(search-wizard). A dataset in Breedbase can contain observationUnit-level (plot-, plant-, or sample-level) trial metadata and phenotypic data from one or more trials. After navigating to the “NIRS” webpage under the “Manage” tab in Breedbase, the user can initiate an analysis and select one of these datasets as input for model training. An optional test dataset can be selected in the second step of the workflow.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_prediction_workflow_intro.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_prediction_workflow_dataset.png')
 ```
 
@@ -486,7 +486,7 @@ Five cross-validation schemes that represent scenarios common in plant breeding 
 * **CV0**, tested lines in untested environments
 * **CV00**, untested lines in untested environments
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_cv.png')
 ```
 
@@ -501,7 +501,7 @@ Preprocessing, also known as pretreatment, is often used to increase the signal 
 
 For more information on preprocessing methods and implementation, see the [*waves*](https://CRAN.R-project.org/package=waves) manual, available through CRAN: [waves.pdf](https://cran.r-project.org/web/packages/waves/waves.pdf)
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_snv.png')
 ```
 
@@ -531,18 +531,18 @@ After training, model performance statistics are both displayed on a results web
 ### Export model for later use
 Once a model has been trained, it can be stored for later use. This action calls the *SaveModel()* function from [*waves*](https://CRAN.R-project.org/package=waves). Metadata regarding the training dataset and other parameters specified by the user upon training initialization are stored alongside the model object itself in the database.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_export_model.png')
 ```
 
 ### Predict phenotypes from an exported model (routine use)
 For phenotype predictions, users select a dataset and can then choose from models in the database that were trained using the same spectrometer type as the spectral data in the chosen dataset. Predicted phenotypes are stored as such in the database and are tagged with an ontology term specifying that they are predicted and not directly measured. Metadata regarding the model used for prediction is stored alongside the predicted value in the database. Predicted phenotypes can then be used as normal in other Breedbase analysis tools such as the Selection Index and GWAS.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_select_model.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_prediction_results.png')
 ```
 
@@ -576,7 +576,7 @@ You are presented with a workflow. On the first step of the workflow, select the
 
 The second part of the workflow presents you with the traits in the dataset; you can select one or more traits from the lists using the select buttons. If you selected one trait, a bargraph of the trait distribution will be shown.  Click the "Next step" button to move to the next screen.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/mixedmodel_tool_model_build_step.png')
 ```
 

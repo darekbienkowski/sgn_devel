@@ -26,6 +26,7 @@ rmd_files: [
   "data_analysis_tools.Rmd"
   ]
 book_filename: BreedbaseManual
+output_dir: docs
 repo: https://github.com/solgenomics/sgn
 delete_merged_file: true
 language:

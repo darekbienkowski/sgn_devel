@@ -1,6 +1,6 @@
 # Managing User Roles
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_user_roles_page.png')
 ```
 

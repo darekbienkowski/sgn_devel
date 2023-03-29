@@ -2,7 +2,7 @@
 
 Breedbase has implemented a flexible spectral data storage protocol that handles spectral data irrespective of the source spectrometer. Spectral data storage and analysis in Breedbase makes use of the R package *waves* for outlier identification, plotting, sample aggregation, and prediction model training.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/waves_breedbase_schema.png')
 ```
 
@@ -21,11 +21,11 @@ To upload a spectral dataset, navigate to the 'Manage NIRS Data' page by selecti
 * **comments**: Optional field for general comments.
 All other columns are required wavelengths. You can add how many columns you want upload -- there is no limit.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_NIRS_main_display.png')
 ```
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/upload_NIRS_example_format.png')
 ```
 
@@ -35,7 +35,7 @@ Spectral calibration models can be heavily affected by the presence of outliers,
 ## Plot Spectra
 After outlier identification, a plot is generated using the *PlotSpectra()* function in [*waves*](https://CRAN.R-project.org/package=waves). This function uses the filtered spectra and *ggplot2::ggplot()* to create a line plot with outliers highlighted by color. A list of rows identified as outliers are shown beneath the plot. Plots are saved as .png files and linked to the original input datasets. Plot image files can be downloaded via the "Download Plot" button in the upload workflow.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/upload_NIRS_plot_example.png')
 ```
 

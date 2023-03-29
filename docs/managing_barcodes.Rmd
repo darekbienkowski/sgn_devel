@@ -2,7 +2,7 @@
 
 SGN databases provide tools for generating barcodes for stock identification. To access “Barcode Tools” page, clicking on “Barcodes” in the “Manage” menu.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image82.png')
 ```
 
@@ -18,19 +18,19 @@ knitr::include_graphics('assets/images/image82.png')
 
 To generate single barcode, clicking on “Generate Barcode” link on the “Barcode Tools” page.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image274.png')
 ```
 
 In the “Generate Barcode” section, specify the name of the barcode, size of the barcode, then clicking on “Generate Barcode”
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image245.png')
 ```
 
 The database will generate a barcode for your stock. The barcode can be printed for your stock identification. It also appears on its corresponding stock page.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image264.png')
 ```
 
@@ -46,7 +46,7 @@ If you have a list of stocks that you want to generate barcodes, you can use “
 
 You can select printer settings that you prefer in the “Printer Settings” section. After you enter stock names and specify printer settings, clicking on “Download Barcodes” button at the bottom of the page.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/image248.png')
 ```
 
@@ -59,7 +59,7 @@ If you have a list of plots that you want to generate phenotyping barcodes, you 
 
 3.  Uploading a “Tab-delimited Text File” with plot names.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/plot_pheno_barcode.png')
 ```
 
@@ -71,6 +71,6 @@ If you have a list of trials that you want to generate barcodes, you can use “
 
 3.  Uploading a “Tab-delimited Text File” with trial names.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
+```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/trial_barcode.png')
 ```
