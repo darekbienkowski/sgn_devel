@@ -507,8 +507,8 @@ sub search {
     if ($using_stockprop_filter || scalar(@stockprop_filtered_stock_ids)>0){
         $search_query->{'me.stock_id'} = {'in'=>\@stockprop_filtered_stock_ids};
     }
-    print STDERR "**stock search q " . Dumper($search_query)  ."\n";
-    print STDERR "***stock_join= " . Dumper($stock_join) ." \n\n";
+#    print STDERR "**stock search q " . Dumper($search_query)  ."\n";
+#    print STDERR "***stock_join= " . Dumper($stock_join) ." \n\n";
     my $rs = $schema->resultset("Stock::Stock")->search(
     $search_query,
     {
@@ -698,7 +698,7 @@ ORDER BY organism_id ASC;";
     }
 
     #print STDERR Dumper \@result;
-    print STDERR "CXGN::Stock::Search search end\n";
+#    print STDERR "CXGN::Stock::Search search end\n";
     return (\@result, $records_total);
 }
 
@@ -724,7 +724,7 @@ sub _refresh_materialized_stockprop {
                 push @additional_terms, $_;
             }
         }
-        print STDERR Dumper \@additional_terms;
+#        print STDERR Dumper \@additional_terms;
 
         my $q = "SELECT t.cvterm_id FROM cvterm as t JOIN cv ON(t.cv_id=cv.cv_id) WHERE t.name=? and cv.name=?;";
         my $h = $schema->storage->dbh()->prepare($q);

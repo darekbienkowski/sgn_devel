@@ -100,10 +100,10 @@ sub create_cross_wishlist_POST : Args(0) {
 
     my $female_trial_layout = CXGN::Trial::TrialLayout->new({ schema => $schema, trial_id => $female_trial_id, experiment_type=>'field_layout' });
     my $design_layout = $female_trial_layout->get_design();
-    print STDERR Dumper $design_layout;
+#    print STDERR Dumper $design_layout;
 
     my %block_plot_hash;
-    print STDERR "NUM PLOTS:".scalar(keys %$design_layout);
+#    print STDERR "NUM PLOTS:".scalar(keys %$design_layout);
     while ( my ($key,$value) = each %$design_layout){
         $block_plot_hash{$value->{block_number}}->{$value->{plot_number}} = $value;
     }
@@ -201,8 +201,8 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     my $test_ona_form_name = $c->config->{odk_crossing_data_test_form_name};
     my $separate_crosswishlist_by_location = $c->config->{odk_crossing_data_separate_wishlist_by_location};
 
-#    print STDERR "CROSSES =".Dumper($data)."\n";
-#    print STDERR "SELECT PLOT IDS =".Dumper($selected_plot_ids)."\n";
+    print STDERR "CROSSES =".Dumper($data)."\n";
+    print STDERR "SELECT PLOT IDS =".Dumper($selected_plot_ids)."\n";
 
     #For test ona forms, the cross wishlists are combined irrespective of location. On non-test forms, the cross wishlists can be separated by location
     my $is_test_form;
@@ -228,7 +228,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
             }
         }
     }
-    #print STDERR Dumper \%individual_cross_plot_ids;
+    print STDERR "INDIVIDUAL CROSS PLOT IDS =".Dumper(\%individual_cross_plot_ids)."\n";
 
     my %selected_cross_hash;
     my %selected_females;
@@ -236,7 +236,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     foreach (@$data){
         push @{$selected_cross_hash{$_->{female_id}}->{$_->{priority}}}, $_->{male_id};
     }
-    #print STDERR Dumper \%selected_cross_hash;
+    print STDERR "SELECTED CROSS HASH =".Dumper(\%selected_cross_hash)."\n";
 
     my %ordered_data;
     foreach my $female_id (keys %selected_cross_hash){
@@ -409,10 +409,12 @@ sub create_cross_wishlist_submit_POST : Args(0) {
         include_obsolete => 1
 	});
     my ($result, $total_count) = $stock_search->search();
+    print STDERR "STOCK SEARCH RESULTS =".Dumper($result)."\n";
     my %accession_info_hash;
     foreach (@$result){
         $accession_info_hash{$_->{stock_id}} = $_;
     }
+    print STDERR "ACCESSION INFO HASH =".Dumper(\%accession_info_hash)."\n";
 
     my %plot_id_hash;
     while ( my ($k,$v) = each %female_and_male_trials){
@@ -796,7 +798,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     });
     my $germplasm_info_uploaded_file = $uploader->archive();
     my $germplasm_info_md5 = $uploader->get_md5($germplasm_info_uploaded_file);
-#    print STDERR "GERMPLASM INFO UPLOADED FILE =".Dumper($germplasm_info_uploaded_file)."\n";
+    print STDERR "GERMPLASM INFO UPLOADED FILE =".Dumper($germplasm_info_uploaded_file)."\n";
     my $germplasm_info_md_row = $metadata_schema->resultset("MdMetadata")->create({create_person_id => $user_id});
     $germplasm_info_md_row->insert();
     my $germplasm_info_md5checksum = $germplasm_info_md5->hexdigest();
