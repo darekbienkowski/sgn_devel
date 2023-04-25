@@ -414,7 +414,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     foreach (@$result){
         $accession_info_hash{$_->{stock_id}} = $_;
     }
-    print STDERR "ACCESSION INFO HASH =".Dumper(\%accession_info_hash)."\n";
+#    print STDERR "ACCESSION INFO HASH =".Dumper(\%accession_info_hash)."\n";
 
     my %plot_id_hash;
     while ( my ($k,$v) = each %female_and_male_trials){
