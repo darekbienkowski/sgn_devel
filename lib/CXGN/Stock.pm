@@ -488,8 +488,10 @@ sub BUILD {
     my $stock;
     if ($self->stock_id){
         $stock = $self->schema()->resultset("Stock::Stock")->find({ stock_id => $self->stock_id() });
-        $self->stock($stock);
-        $self->stock_id($stock->stock_id);
+        if(defined $stock) {
+            $self->stock($stock);
+            $self->stock_id($stock->stock_id);
+        }
     }
     elsif ($self->uniquename) {
 	$stock = $self->schema()->resultset("Stock::Stock")->find( { uniquename => $self->uniquename() });
