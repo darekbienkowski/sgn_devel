@@ -669,7 +669,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     my @new_header_row = split ',', $header;
     print STDERR "PRIORITY ORDER HASH =".Dumper(\%priority_order_hash)."\n";
     print STDERR "WISHLIST LINES =".Dumper(\@lines)."\n";
-    print STDERR "GERMPLAM INFO LINES =".Dumper(\@germaplasm_info_lines)."\n";
+    print STDERR "GERMPLAM INFO LINES =".Dumper(\@germplasm_info_lines)."\n";
 
     if (scalar(@old_header_row_array)>scalar(@new_header_row)){
         chomp $old_header_row;
