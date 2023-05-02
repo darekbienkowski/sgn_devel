@@ -409,7 +409,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
         include_obsolete => 1
 	});
     my ($result, $total_count) = $stock_search->search();
-    print STDERR "STOCK SEARCH RESULTS =".Dumper($result)."\n";
+#    print STDERR "STOCK SEARCH RESULTS =".Dumper($result)."\n";
     my %accession_info_hash;
     foreach (@$result){
         $accession_info_hash{$_->{stock_id}} = $_;
@@ -542,7 +542,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
             }
         }
     }
-
+    print STDERR "GERMPLASM INFO LINE 1 =".Dumper(\@germplasm_info_lines)."\n";
     my $header = '"FemaleObservationUnitType","FemaleObservationUnitName","FemaleObservationUnitID","FemalePlotID","FemalePlotName","FemaleAccessionName","FemaleAccessionID","FemalePlotNumber","FemaleAccessionNameAndPlotNumber","FemaleBlockNumber","FemaleRepNumber","FemalePlantName","FemalePlantID","FemalePlantNumber","FemaleAccessionNameAndPlotNumberAndPlantNumber","Timestamp","CrossWishlistCreatedByUsername","NumberMales"';
     my @lines;
     my $max_male_num = 0;
@@ -667,9 +667,9 @@ sub create_cross_wishlist_submit_POST : Args(0) {
         push @{$priority_order_hash{$_->{priority}}}, [$_->{female_id}, $_->{male_id}];
     }
     my @new_header_row = split ',', $header;
-    #print STDERR Dumper \%priority_order_hash;
-    #print STDERR Dumper \@lines;
-    #print STDERR Dumper \@germaplasm_info_lines;
+    print STDERR "PRIORITY ORDER HASH =".Dumper(\%priority_order_hash)."\n";
+    print STDERR "WISHLIST LINES =".Dumper(\@lines)."\n";
+    print STDERR "GERMPLAM INFO LINES =".Dumper(\@germaplasm_info_lines)."\n";
 
     if (scalar(@old_header_row_array)>scalar(@new_header_row)){
         chomp $old_header_row;
