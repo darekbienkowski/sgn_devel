@@ -277,7 +277,7 @@ sub search {
     }
 
     my ($or_conditions, $and_conditions);
-    #$and_conditions->{'me.stock_id'} = { '>' => 0 }; ##Is this needed here?
+    $and_conditions->{'me.stock_id'} = { '>' => 0 }; ##Is this needed here?
 
     my $start = '%';
     my $end = '%';
