@@ -520,7 +520,7 @@ sub BUILD {
     }
 
 
-    if ($self->stock_id()) {
+    if (defined $self->stock_id()) {
 
 	my @objects;
 	my $object_rs = $self->schema()->resultset("Stock::Stock")->find( { stock_id => $self->stock_id() })->stock_relationship_objects();
