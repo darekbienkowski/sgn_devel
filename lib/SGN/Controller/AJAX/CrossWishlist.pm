@@ -419,8 +419,25 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     foreach (@$result){
         $accession_info_hash{$_->{stock_id}} = $_;
     }
- #  print STDERR "ACCESSION INFO HASH =".Dumper(\%accession_info_hash)."\n";
-   print STDERR "FEMALE AND MALE TRIALS =".Dumper(\%female_and_male_trials)."\n";
+
+    my @accession_ids_in_hashes = keys %accession_info_hash;
+    my $number_in_hashes = scalar @accession_ids_in_hashes;
+    print STDERR "NUMBER IN HASHES =".Dumper($number_in_hashes)."\n";
+    my @missing_accession_ids;
+    my @exist_accession_ids;
+    foreach my $each_accession (@accession_ids) {
+        if ($each_accession ~~ @accession_ids_in_hashes) {
+            push @exist_accession_ids, $each_accession;
+        } else {
+            push @missing_accession_ids, $each_accession;
+        }
+    }
+    print STDERR "EXIST ACCESSIONS =".Dumper(\@exist_accession_ids)."\n";
+    print STDERR "MISSING ACCESSIONS =".Dumper(\@missing_accession_ids)."\n";
+
+
+#   print STDERR "ACCESSION INFO HASH =".Dumper(\%accession_info_hash)."\n";
+#   print STDERR "FEMALE AND MALE TRIALS =".Dumper(\%female_and_male_trials)."\n";
 
     my %plot_id_hash;
     while ( my ($k,$v) = each %female_and_male_trials){
