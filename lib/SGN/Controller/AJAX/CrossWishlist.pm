@@ -398,7 +398,7 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     $female_and_male_trials{male}->{year} = $male_trial->get_year();
 
     my @accession_ids = keys %accession_id_hash;
-    my $number_of_accessions = scalar @accessions_ids;
+    my $number_of_accessions = scalar @accession_ids;
     print STDERR "ACCESSION IDS =".Dumper(\@accession_ids)."\n";
     print STDERR "NUMBER OF ACCESSION IDS =".Dumper($number_of_accessions)."\n";
     my $accession_cvterm_id = SGN::Model::Cvterm->get_cvterm_row($schema, 'accession', 'stock_type')->cvterm_id();
