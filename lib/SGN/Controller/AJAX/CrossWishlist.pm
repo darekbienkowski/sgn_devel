@@ -398,7 +398,9 @@ sub create_cross_wishlist_submit_POST : Args(0) {
     $female_and_male_trials{male}->{year} = $male_trial->get_year();
 
     my @accession_ids = keys %accession_id_hash;
+    my $number_of_accessions = scalar @accessions_ids;
     print STDERR "ACCESSION IDS =".Dumper(\@accession_ids)."\n";
+    print STDERR "NUMBER OF ACCESSION IDS =".Dumper($number_of_accessions)."\n";
     my $accession_cvterm_id = SGN::Model::Cvterm->get_cvterm_row($schema, 'accession', 'stock_type')->cvterm_id();
     my $stock_search = CXGN::Stock::Search->new({
         bcs_schema=>$schema,
@@ -411,11 +413,14 @@ sub create_cross_wishlist_submit_POST : Args(0) {
 	});
     my ($result, $total_count) = $stock_search->search();
 #    print STDERR "STOCK SEARCH RESULTS =".Dumper($result)."\n";
+    print STDERR "TOTAL COUNT =".Dumper($total_count)."\n";
+
     my %accession_info_hash;
     foreach (@$result){
         $accession_info_hash{$_->{stock_id}} = $_;
     }
-#    print STDERR "ACCESSION INFO HASH =".Dumper(\%accession_info_hash)."\n";
+ #  print STDERR "ACCESSION INFO HASH =".Dumper(\%accession_info_hash)."\n";
+   print STDERR "FEMALE AND MALE TRIALS =".Dumper(\%female_and_male_trials)."\n";
 
     my %plot_id_hash;
     while ( my ($k,$v) = each %female_and_male_trials){
