@@ -8,6 +8,8 @@ To begin click on the "Add Accessions or Upload Accession Info" link.
 knitr::include_graphics('assets/images/manage_accessions_add_accessions_link.png')
 ```
 
+one more change
+
 This will open a dialog allowing you to select either "Using Lists" or "Uploading a File".
 
 ## Add Accessions Using A List
