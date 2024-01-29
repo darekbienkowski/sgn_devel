@@ -33,11 +33,11 @@ jobs:
     #   url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        with:          
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
-          token: ${{ secrets.MANUAL_GITACTION }}
+        uses: actions/checkout@v2
+        # with:          
+        #   fetch-depth: 0
+        #   ref: ${{ github.event.pull_request.head.ref }}
+        #   token: ${{ secrets.MANUAL_GITACTION }}
       - name: Save directory for checkout
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Create gitbook         
