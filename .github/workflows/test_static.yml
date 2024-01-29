@@ -35,6 +35,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:          
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
           token: ${{ secrets.MANUAL_GITACTION }}
       - name: Save directory for checkout
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"

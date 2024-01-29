@@ -20,7 +20,7 @@ Welcome to the Breedbase manual!
 test for pull request !!!
 
 ::: {show-in="html"}
-Use the table of contents in the left sidebar to navigate to the topic of your choice.   
+Use the table of contents in the left sidebar to navigate to the topic of your choice.      
 
 At any time you can select specific text in the manual to highlight or annotate it using [Hypothesis](https://web.hypothes.is/). Open the Hypothesis sidebar on the right to view existing annotations.
 
