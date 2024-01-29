@@ -12,7 +12,7 @@ This will open a dialog allowing you to select either "Using Lists" or "Uploadin
 
 ## Add Accessions Using A List
 
-First we will show how to add accessions "Using Lists".
+First we will show how to add accessions "Using Lists".  
 
 ```{r echo=FALSE, out.width='95%', fig.align='center'}
 knitr::include_graphics('assets/images/manage_accessions_add_accessions_using_lists.png')
