@@ -13,14 +13,7 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: write 
-  # pages: write
   id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-# concurrency:
-#   group: "pages"
-#   cancel-in-progress: false
 
 jobs:
   # Single deploy job since we're just deploying
@@ -28,16 +21,12 @@ jobs:
     runs-on: ubuntu-latest    
     container: 
       image: bienkowskid/fedora40-r-bookdown
-    # environment:
-    #   name: github-pages
-    #   url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:          
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
-        #   token: ${{ secrets.MANUAL_GITACTION }}
+          ref: ${{ github.event.pull_request.head.ref }}        
       - name: Save directory for checkout
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Create gitbook         
@@ -54,14 +43,3 @@ jobs:
           git add --force --all docs/
           git commit -m "update bookdown docs"
           git push
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v3
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v2
-      #   with:
-      #     # Upload docs only
-      #     path: './docs'
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v2
-  
