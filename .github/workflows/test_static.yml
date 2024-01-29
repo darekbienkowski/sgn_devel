@@ -18,9 +18,9 @@ permissions:
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: false
 
 jobs:
   # Single deploy job since we're just deploying
@@ -51,7 +51,7 @@ jobs:
           date > generated.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add --force docs/*.*
+          git add --force --all docs/
           git commit -m "update bookdown docs"
           git push
       # - name: Setup Pages
