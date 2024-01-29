@@ -17,16 +17,6 @@ site: bookdown::bookdown_site
 
 Welcome to the Breedbase manual! 
 
-test for pull request !!!
-
-more files form push 
-
-next changes 
-
-one more change
-
-one one one more
-
 ::: {show-in="html"}
 Use the table of contents in the left sidebar to navigate to the topic of your choice.     
 
